@@ -30,14 +30,17 @@ if st.button("Calcular", type="primary"):
     if operacao == "Soma (+)":
         resultado = num1 + num2
         st.success(f"✨ O resultado de **{num1} + {num2}** é: **{resultado}**")
+        st.balloons()  # Efeito de balões para comemorar o sucesso do cálculo
         
     elif operacao == "Subtração (-)":
         resultado = num1 - num2
         st.success(f"✨ O resultado de **{num1} - {num2}** é: **{resultado}**")
+        st.balloons()  # Efeito de balões para comemorar o sucesso do cálculo
         
     elif operacao == "Multiplicação (*)":
         resultado = num1 * num2
         st.success(f"✨ O resultado de **{num1} × {num2}** é: **{resultado}**")
+        st.balloons()  # Efeito de balões para comemorar o sucesso do cálculo
         
     elif operacao == "Divisão (/)":
         # 5. Tratamento amigável para divisão por zero
@@ -46,4 +49,4 @@ if st.button("Calcular", type="primary"):
         else:
             resultado = num1 / num2
             st.success(f"✨ O resultado de **{num1} ÷ {num2}** é: **{resultado:.2f}**")
-            
+            st.balloons()  # Efeito de balões para comemorar o sucesso do cálculo
